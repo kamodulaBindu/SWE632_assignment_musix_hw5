@@ -16,9 +16,12 @@ private url:string="&api_key=891cab45a94177d4e0b696d797a9bf2d&format=json";
 private search_url:string ="http://ws.audioscrobbler.com/2.0/?method=track.search&track=";
 private searchUrl:string="&api_key=891cab45a94177d4e0b696d797a9bf2d&format=json";
 
+private searchPath = "assets/data/tracks.json";
+
   constructor(private http: HttpClient) { }
   getTracks(): Observable<any>{
-    return this.http.get<any>(this._url+this.url)
+    // return this.http.get<any>(this._url+this.url)
+    return this.http.get<any>(this.searchPath)
               .pipe(map(data => data.tracks.track))
               .pipe(catchError(this.errorHandler));
   }

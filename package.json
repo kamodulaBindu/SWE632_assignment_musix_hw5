@@ -51,6 +51,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/jquery": "^3.3.31",
     "@types/node": "~8.9.4",
+    "angular-cli-ghpages": "^1.0.0",
     "codelyzer": "^5.0.0",
     "igniteui-cli": "~4.2.0",
     "jasmine-core": "~3.4.0",
